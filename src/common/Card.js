@@ -1,38 +1,8 @@
 class Card {
-  constructor({ width = 100, height = 100, colors = {}, title = "" }) {
+  constructor({ width = 100, height = 100, title = "" }) {
     this.width = width;
     this.height = height;
     this.title = title;
-    this.colors = colors;
-    this.hideBorder = 0;
-    this.hideTitle = 0;
-    this.a11yTitle = "";
-    this.a11yDesc = "";
-  }
-
-  // renderTitle() {
-  //   const titleText = `
-  //     <text
-  //       x="0"
-  //       y="0"
-  //       class="header"
-  //       data-testid="header"
-  //     >${this.title}</text>
-  //   `;
-
-  //   return
-  // }
-
-  setHideBorder(value) {
-    this.hideBorder = value;
-  }
-
-  setHideTitle(value) {
-    this.hideTitle = value;
-  }
-
-  setCSS(value) {
-    this.css = value;
   }
 
   render(body) {

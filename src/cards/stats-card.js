@@ -1,9 +1,7 @@
 const Card = require("../common/Card");
 
-const renderStatsCard = (stats = {}, options = { hide: [] }) => {
+const renderStatsCard = (stats = {}) => {
   const { name, badges = {}, reputation, questionCount, answerCount } = stats;
-
-  const { title, colors, hideBorder = false, hideTitle = false } = options;
 
   const renderBadges = (badges) => {
     return `
@@ -54,10 +52,6 @@ const renderStatsCard = (stats = {}, options = { hide: [] }) => {
   const card = new Card({
     title: name + "'s Stack Overflow Stats",
   });
-
-  card.setHideBorder(hideBorder);
-  card.setHideTitle(hideTitle);
-  card.setCSS(null);
 
   return card.render(
     `<g transform="translate(25, 60)">

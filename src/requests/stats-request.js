@@ -1,5 +1,4 @@
 const axios = require("axios");
-const util = require("util");
 const { isArrayHasValue } = require("../common/utils");
 
 const fetchUser = (userId) => {
