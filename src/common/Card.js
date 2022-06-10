@@ -35,69 +35,31 @@ class Card {
     this.css = value;
   }
 
-  // render(body) {
-  //   return `
-  //     <svg
-  //       xmlns="http://www.w3.org/2000/svg"
-  //       role="img"
-  //       fill="none"
-  //       width="${this.width}"
-  //       height="${this.height}"
-  //     >
-  //       <title id="titleId">${this.a11yTitle}</title>
-  //       <desc id="descId">${this.a11yDesc}</desc>
-  //       <style>
-  //         .header {
-  //           font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-  //           fill: ${this.colors.titleColor};
-  //           animation: fadeInAnimation 0.8s ease-in-out forwards;
-  //         }
-  //         @supports(-moz-appearance: auto) {
-  //           /* Selector detects Firefox */
-  //           .header { font-size: 15.5px; }
-  //         }
-  //         ${this.css}
-  //       </style>
-
-  //       <rect
-  //         xmlns="http://www.w3.org/2000/svg"
-  //         data-testid="card-bg"
-  //         height="100%"
-  //         rx="10"
-  //         stroke="blue"
-  //         width="100%"
-  //         stroke-opacity="${this.hideBorder ? 0 : 1}"
-  //         fill="${
-  //           typeof this.colors.bgColor === "object"
-  //             ? "url(#gradient)"
-  //             : this.colors.bgColor
-  //         }"
-  //       >
-  //       </rect>
-
-  //       ${this.hideTitle ? "" : this.title}
-
-  //       <g
-  //         data-testid="main-card-body"
-  //         transform="translate(0, ${
-  //           this.hideTitle ? this.paddingX : this.paddingY + 20
-  //         })"
-  //       >
-  //         ${body}
-  //       </g>
-
-  //     </svg>
-  //   `;
-  // }
-
-  render() {
+  render(body) {
     return `
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="220" height="100">
-	<rect xmlns="http://www.w3.org/2000/svg" data-testid="card-bg" height="100%" rx="10" stroke="blue" width="100%" fill="#fffefe" stroke-opacity="1"/>
-  <rect transform="translate(15, 10)" width="80%" height="30%" stroke="hsl(28,31%,52%)" fill="rgb(243, 234, 226)" rx="6">    
-  </rect>
-  <text>TTT</text>
-</svg>`;
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="450" height="165" viewBox="0 0 450 165">
+        <style>
+          .title {
+            font-size: 18px;
+            font-weight: 600;
+            fill: #e7f216;
+            font-family: 'Segoe UI', Ubuntu, Sans-Serif;
+          }
+          .stat {
+            font-size: 14px;
+            font-weight: 600;
+            fill: #fff;
+            font-family: 'Segoe UI', Ubuntu, Sans-Serif;
+          }
+        </style>
+
+        <rect xmlns="http://www.w3.org/2000/svg" data-testid="card-bg" fill="#000" x="0.5" height="99%" rx="10" stroke="#000" width="449" stroke-opacity="0" />
+        <!-- Title -->
+        <g transform="translate(25, 35)">
+          <text class="title" x="0" y="0">${this.title}</text>
+        </g>
+        ${body}
+      </svg>`;
   }
 }
 
