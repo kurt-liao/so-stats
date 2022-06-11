@@ -1,5 +1,6 @@
 const Card = require("../common/Card");
-const { getRandomTheme } = require("../common/utils");
+const { getRandomTheme, numFormatter } = require("../common/utils");
+const { getStyle } = require("../common/styles");
 
 const renderStatsCard = (
   stats = {},
@@ -9,7 +10,7 @@ const renderStatsCard = (
     iconColor = "#fff",
     titleColor = "#e7f216",
     textColor = "#fff",
-    badgeTextColor = "#fff",
+    badgeTextColor = "#000",
     borderColor = "#fff",
 
     hideBorder = false,
@@ -51,6 +52,11 @@ const renderStatsCard = (
   const { name, badges = {}, reputation, questionCount, answerCount } = stats;
 
   const renderBadges = (badges) => {
+
+    badges.gold = numFormatter(badges?.gold, 1);
+    badges.silver = numFormatter(badges?.silver, 1);
+    badges.bronze = numFormatter(badges?.bronze, 1);
+
     return `
         <svg height="24" width="150" x="50%" y="-5">
           <rect width="150" height="24" stroke="hsl(45,100%,47%)" fill="hsl(48,100%,91%)" rx="6">    
@@ -79,22 +85,29 @@ const renderStatsCard = (
   };
 
   const renderStats = (reputation, questionCount, answerCount) => {
+    
+    reputation = numFormatter(reputation, 1);
+    questionCount = numFormatter(questionCount, 1);
+    answerCount = numFormatter(answerCount, 1);
+    
     return `
       <svg x="0" y="0">
         <g transform="translate(0, 0)">
-          <text x="0" y="10" class="stat">Reputation : </text>
-          <text x="130" y="10" class="stat">${reputation || 0}</text>
+          <text x="-100" y="10" class="stat">Reputation : </text>
+          <text x="-100" y="10" class="stat-value">${reputation || 0}</text>
         </g>
         <g transform="translate(0, 60)">
-          <text y="10" class="stat">Answer Count : </text>
-          <text x="130" y="10" class="stat">${answerCount || 0}</text>
+          <text x="-100" y="10" class="stat">Answer Count : </text>
+          <text x="-100" y="10" class="stat-value">${answerCount || 0}</text>
         </g>
         <g transform="translate(0, 30)">
-          <text y="10" class="stat">Question Count : </text>
-          <text x="130" y="10" class="stat">${questionCount || 0}</text>
+          <text x="-100" y="10" class="stat">Question Count : </text>
+          <text x="-100" y="10" class="stat-value">${questionCount || 0}</text>
         </g>
       </svg>`;
   };
+
+  const css = getStyle(options);
 
   const card = new Card(
     {
@@ -102,6 +115,8 @@ const renderStatsCard = (
     },
     options,
   );
+
+  card.setStyle(css);
 
   return card.render(
     `<g transform="translate(25, 60)">

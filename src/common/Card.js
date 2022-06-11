@@ -1,3 +1,5 @@
+const { getAnimations } = require("../common/styles");
+
 class Card {
   constructor(
     { width = 100, height = 100, title = "" },
@@ -15,6 +17,7 @@ class Card {
     this.width = width;
     this.height = height;
     this.title = title;
+    this.css = "";
 
     this.bgColor = bgColor;
     this.iconColor = iconColor;
@@ -26,32 +29,17 @@ class Card {
     this.hideTitle = hideTitle;
   }
 
+  setStyle(css) {
+    this.css = css;
+  }
+
   render(body) {
     return `
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="450" height="165" viewBox="0 0 450 165">
         <style>
-          ${
-            !this.hideTitle
-              ? `.title {
-            font-size: 18px;
-            font-weight: 600;
-            fill: ${this.titleColor};
-            font-family: 'Segoe UI', Ubuntu, Sans-Serif;
-          }`
-              : ""
-          }
-          .stat {
-            font-size: 14px;
-            font-weight: 600;
-            fill: ${this.textColor};
-            font-family: 'Segoe UI', Ubuntu, Sans-Serif;
-          }
-
-          .badge-text {
-            fill: ${this.badgeTextColor}
-          }
+          ${this.css}
+          ${getAnimations()}
         </style>
-
         <rect xmlns="http://www.w3.org/2000/svg" data-testid="card-bg" fill="${
           this.bgColor
         }" x="0.5" height="99%" rx="10" stroke="${

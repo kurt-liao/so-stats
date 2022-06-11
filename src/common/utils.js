@@ -26,15 +26,6 @@ const getRandomTheme = () => {
     textColor.darken();
     iconColor.darken();
   }
-  const result = {
-    bgColor,
-    iconColor,
-    titleColor,
-    textColor,
-    borderColor,
-    badgeTextColor,
-  };
-  console.log(result);
 
   return {
     bgColor,
@@ -46,8 +37,33 @@ const getRandomTheme = () => {
   };
 };
 
+const numFormatter = (num, digits) => {
+  const map = [
+    { value: 1, symbol: "" },
+    { value: 1e3, symbol: "k" },
+    { value: 1e6, symbol: "m" },
+    { value: 1e9, symbol: "g" },
+    { value: 1e12, symbol: "t" },
+    { value: 1e15, symbol: "p" },
+    { value: 1e18, symbol: "e" },
+  ];
+
+  const regex = /\.0+$|(\.[0-9]*[1-9])0+$/;
+  const item = map
+    .slice()
+    .reverse()
+    .find((item) => {
+      return num >= item.value;
+    });
+
+  return item
+    ? (num / item.value).toFixed(digits).replace(regex, "$1") + item.symbol
+    : "0";
+};
+
 module.exports = {
   isArray,
   isArrayHasValue,
   getRandomTheme,
+  numFormatter,
 };
