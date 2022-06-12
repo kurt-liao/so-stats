@@ -18,22 +18,10 @@ const getAnimations = () => {
         }
         @keyframes scaleInStatValue {
           from {
-            opacity: 0;
             transform: scale(0);
           }
           to {
-            opacity: 1;
             transform: scale(1);
-          }
-        }
-
-        @keyframes fadeInFromTop {
-          from {
-            transform: translate(0px, -100px);
-          }
-
-          to {
-            transform: translate(0px, 0px);
           }
         }
     `;
@@ -63,10 +51,6 @@ const getStyle = ({ titleColor, textColor, iconColor, badgeTextColor }) => {
       fill: ${textColor};
       font-family: 'Segoe UI', Ubuntu, Sans-Serif;
       animation: scaleInStatValue .5s ease-in forwards;
-    }
-
-    .badge-animate {
-      animation: fadeInFromTop .5s ease-in forwards;
     }
 
     .badge-text {
