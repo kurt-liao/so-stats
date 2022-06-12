@@ -17,14 +17,17 @@ const getRandomTheme = () => {
   const borderColor = randomColor();
   const badgeTextColor = randomColor();
 
+  while (
+    bgColor.toString() === titleColor.toString() ||
+    bgColor.toString() === textColor.toString()
+  ) {
+    bgColor = randomColor();
+  }
+
   if (bgColor.isDark()) {
     titleColor.getBrightness();
     textColor.getBrightness();
     iconColor.getBrightness();
-  } else {
-    titleColor.darken();
-    textColor.darken();
-    iconColor.darken();
   }
 
   return {
