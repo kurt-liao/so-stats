@@ -15,7 +15,7 @@ Idea from
 - Change your user id into url
   `https://so-stats.vercel.app/api?user_id=[your-user-id]`
 
-## Special Settings
+## Optional Settings
 
 - Hide Title Put hide_title in url querys,
   https://so-stats.vercel.app/api?user_id=[your-user-id]&hide_title=true`,
