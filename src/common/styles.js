@@ -1,29 +1,13 @@
 const getAnimations = () => {
   return `
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        @keyframes scaleInStat {
+      @keyframes fadeIn {
           from {
-            transform: scale(0);
+              opacity: 0;
           }
           to {
-            transform: scale(1);
+              opacity: 1;
           }
-        }
-        @keyframes scaleInStatValue {
-          from {
-            transform: scale(0);
-          }
-          to {
-            transform: scale(1);
-          }
-        }
+      }
     `;
 };
 
@@ -34,7 +18,7 @@ const getStyle = ({ titleColor, textColor, iconColor, badgeTextColor }) => {
       font-weight: 600;
       fill: ${titleColor};
       font-family: 'Segoe UI', Ubuntu, Sans-Serif;
-      animation: fadeIn 1s ease-in forwards;
+      animation: fadeIn .3s ease-in forwards;
     }
 
     .stat {
@@ -42,7 +26,7 @@ const getStyle = ({ titleColor, textColor, iconColor, badgeTextColor }) => {
       font-weight: 600;
       fill: ${textColor};
       font-family: 'Segoe UI', Ubuntu, Sans-Serif;
-      animation: scaleInStat .3s ease-in forwards;
+      animation: fadeIn .3s ease-in forwards;
     }
 
     .stat-value {
@@ -50,7 +34,7 @@ const getStyle = ({ titleColor, textColor, iconColor, badgeTextColor }) => {
       font-weight: 600;
       fill: ${textColor};
       font-family: 'Segoe UI', Ubuntu, Sans-Serif;
-      animation: scaleInStatValue .5s ease-in forwards;
+      animation: fadeIn .5s ease-in forwards;
     }
 
     .badge-text {

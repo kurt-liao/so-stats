@@ -1,4 +1,5 @@
 const renderStatsCard = require("../src/cards/stats-card");
+const { renderError } = require("../src/common/utils");
 const fetchStats = require("../src/requests/stats-request");
 require("dotenv").config();
 
@@ -16,6 +17,7 @@ module.exports = async (req, res) => {
     const stats = await fetchStats(user_id);
     res.send(renderStatsCard(stats, options));
   } catch (err) {
-    res.send(err);
+    return res.send(renderError(err.message));
+    // res.send(err);
   }
 };

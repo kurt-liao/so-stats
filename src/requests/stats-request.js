@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { isArrayHasValue } = require("../common/utils");
+const { isArrayHasValue, ParamMissingError } = require("../common/utils");
 
 const fetchUser = (userId) => {
   return axios({
@@ -16,7 +16,9 @@ const fetchAccountAssociated = (accountId) => {
 };
 
 const fetchStats = async (userId) => {
-  if (!userId) return;
+  if (!userId) {
+    throw new ParamMissingError(["user_id"]);
+  }
 
   const stats = {
     badges: {
@@ -40,7 +42,9 @@ const fetchStats = async (userId) => {
       stats.badges = user.badge_counts;
 
       if (!user.account_id) {
-        console.log("Could not fetch user account");
+        throw new Error(
+          "User not found, make sure you provide correct user id",
+        );
       }
 
       const accountRes = await fetchAccountAssociated(user.account_id);
@@ -54,13 +58,20 @@ const fetchStats = async (userId) => {
         }
       }
     } else {
-      console.log("Could not fetch user");
+      throw new Error("Could not fetch account associated");
     }
 
     return stats;
   } catch (err) {
-    console.log(err);
-    return 0;
+    if (err.response && err.response.data) {
+      const { error_id, error_message, error_name } = err.response.data;
+
+      if (error_id === 400 && error_message === "ids") {
+        throw new Error(`Could not fetch user by id ${userId}`);
+      }
+
+      throw new Error("Fetch to user error");
+    }
   }
 };
 
