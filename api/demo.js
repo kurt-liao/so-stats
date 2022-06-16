@@ -1,9 +1,17 @@
 const renderStatsCard = require("../src/cards/stats-card");
 
-module.exports = (request, response) => {
-  response.setHeader("Content-Type", "image/svg+xml");
+module.exports = (req, res) => {
+  const { random, hide_title, hide_badges, hide_border } = req.query;
+  const options = {
+    random,
+    hideTitle: hide_title,
+    hideBadges: hide_badges,
+    hideBorder: hide_border,
+  };
 
-  response.send(
+  res.setHeader("Content-Type", "image/svg+xml");
+
+  res.send(
     renderStatsCard(
       {
         name: "Test",
@@ -16,7 +24,7 @@ module.exports = (request, response) => {
         questionCount: 122,
         answerCount: 88888,
       },
-      { random: true },
+      options,
     ),
   );
 };

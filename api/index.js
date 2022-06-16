@@ -18,6 +18,5 @@ module.exports = async (req, res) => {
     res.send(renderStatsCard(stats, options));
   } catch (err) {
     return res.send(renderError(err.message));
-    // res.send(err);
   }
 };
