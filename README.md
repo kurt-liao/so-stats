@@ -7,7 +7,7 @@ Idea from
 
 ## Demo
 
-![demo](https://so-stats.vercel.app/api/test)
+![demo](https://so-stats.vercel.app/api/demo)
 
 ## How to use
 
