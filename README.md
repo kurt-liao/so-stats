@@ -6,7 +6,7 @@ Idea from
 ---
 
 ## Demo
-default is false
+
 <img height="200" src="https://so-stats-kurt-liao.vercel.app/api/demo" />
 
 ## How to use
