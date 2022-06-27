@@ -7,7 +7,7 @@ Idea from
 
 ## Demo
 
-![demo](https://so-stats.vercel.app/api/demo)
+<img height="200" src="https://so-stats-kurt-liao.vercel.app/api/demo" />
 
 ## How to use
 
