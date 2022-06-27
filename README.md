@@ -6,7 +6,7 @@ Idea from
 ---
 
 ## Demo
-
+default is false
 <img height="200" src="https://so-stats-kurt-liao.vercel.app/api/demo" />
 
 ## How to use
@@ -17,21 +17,24 @@ Idea from
 
 ## Optional Settings
 
-- Hide Title Put hide_title in url querys,
-  https://so-stats.vercel.app/api?user_id=[your-user-id]&hide_title=true`,
-  default is false
+- Hide title - Put hide_title in url querys
+  ```
+  https://so-stats.vercel.app/api?user_id=[your-user-id]&hide_title=true` #default is false
+  ```
 
-- Hide Border Put hide_border in url querys,
-  https://so-stats.vercel.app/api?user_id=[your-user-id]&hide_border=true`,
-  default is false
+- Hide Border -  Put hide_border in url querys
+  ```
+  https://so-stats.vercel.app/api?user_id=[your-user-id]&hide_border=true` #default is false
+  ```
 
-- Random theme(You will get different and not predictable theme everytime) Put
-  random in url querys,
-  https://so-stats.vercel.app/api?user_id=[your-user-id]&random=true`, default
-  is false
+- Random theme - Put random in url querys
+  ```
+  https://so-stats.vercel.app/api?user_id=[your-user-id]&random=true`
+  #You will get different and not predictable theme everytime, default is false
+  ```
 
 ---
 
-### The project is in the very beginning, it may update frequently.
+### The project is in the very beginning.
 
 ### Feel free to give me some feedback or suggestions!
