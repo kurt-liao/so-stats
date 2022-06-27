@@ -4,12 +4,14 @@ const fetchStats = require("../src/requests/stats-request");
 require("dotenv").config();
 
 module.exports = async (req, res) => {
-  const { user_id, random, hide_title, hide_badges, hide_border } = req.query;
+  const { user_id, random, hide_title, hide_badges, hide_border, hide_logo } =
+    req.query;
   const options = {
     random,
     hideTitle: hide_title,
     hideBadges: hide_badges,
     hideBorder: hide_border,
+    hideLogo: hide_logo,
   };
   res.setHeader("Content-Type", "image/svg+xml");
 

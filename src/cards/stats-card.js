@@ -16,6 +16,7 @@ const renderStatsCard = (
     hideBorder = false,
     hideBadges = false,
     hideTitle = false,
+    hideLogo = false,
   },
 ) => {
   const options = {
@@ -29,6 +30,7 @@ const renderStatsCard = (
     hideBorder,
     hideBadges,
     hideTitle,
+    hideLogo,
   };
 
   if (random) {
@@ -117,7 +119,7 @@ const renderStatsCard = (
   card.setStyle(css);
 
   return card.render(
-    `<g transform="translate(25, 60)">
+    `<g transform="translate(25, 70)">
       ${renderStats(reputation, questionCount, answerCount)}
       ${hideBadges ? null : renderBadges(badges)}
      </g>
