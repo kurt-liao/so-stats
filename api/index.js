@@ -13,6 +13,8 @@ module.exports = async (req, res) => {
     hideBorder: hide_border,
     hideLogo: hide_logo,
   };
+
+  res.setHeader("Cache-Control", "public max-age=3600");
   res.setHeader("Content-Type", "image/svg+xml");
 
   try {
