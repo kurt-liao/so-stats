@@ -1,4 +1,5 @@
 const { getAnimations } = require("../common/styles");
+const getIcon = require("../common/icons");
 
 class Card {
   constructor(
@@ -41,7 +42,7 @@ class Card {
 
   calcLongTitleWidth() {
     if (!this.title) return 450;
-    return 75 + this.title.length * 10;
+    return 65 + this.title.length * 10;
   }
 
   render(body) {
@@ -68,10 +69,10 @@ class Card {
             ? `<g transform="translate(25, 42)">
                 ${
                   !this.hideLogo
-                    ? `<image href="/logo.png" width="40" heigth="40" x="-6" y="-30"/>`
+                    ? `<svg x="-6" y="-26"> ${getIcon("so")}</svg>`
                     : ""
                 }
-                <text class="title" x="${this.hideLogo ? "" : 50}" y="0">${
+                <text class="title" x="${this.hideLogo ? "" : 40}" y="0">${
                 this.title
               }</text>
               </g>`
