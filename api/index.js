@@ -4,7 +4,7 @@ const fetchStats = require("../src/requests/stats-request");
 require("dotenv").config();
 
 module.exports = async (req, res) => {
-  const { user_id, random, hide = "" } = req.query;
+  const { user, random, hide = "" } = req.query;
 
   const _hide = hide.replace(/\s/g, "");
   const hideArr = _hide.split(",");
@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
   res.setHeader("Content-Type", "image/svg+xml");
 
   try {
-    const stats = await fetchStats(user_id);
+    const stats = await fetchStats(user);
     res.send(renderStatsCard(stats, options));
   } catch (err) {
     return res.send(renderError(err.message));

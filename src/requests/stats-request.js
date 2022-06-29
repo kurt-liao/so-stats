@@ -17,7 +17,7 @@ const fetchAccountAssociated = (accountId) => {
 
 const fetchStats = async (userId) => {
   if (!userId) {
-    throw new ParamMissingError(["user_id"]);
+    throw new ParamMissingError(["user"]);
   }
 
   const stats = {
