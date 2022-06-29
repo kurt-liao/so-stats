@@ -4,7 +4,7 @@ const fetchStats = require("../src/requests/stats-request");
 require("dotenv").config();
 
 module.exports = async (req, res) => {
-  const { user, random, hide = "" } = req.query;
+  const { user, random, hide = "", cache } = req.query;
 
   const _hide = hide.replace(/\s/g, "");
   const hideArr = _hide.split(",");
@@ -14,7 +14,10 @@ module.exports = async (req, res) => {
     hide: hideArr,
   };
 
-  res.setHeader("Cache-Control", "public max-age=3600");
+  if (cache) {
+    res.setHeader("Cache-Control", "public max-age=3600");
+  }
+
   res.setHeader("Content-Type", "image/svg+xml");
 
   try {
