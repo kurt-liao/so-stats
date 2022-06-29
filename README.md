@@ -71,6 +71,15 @@ You can pass a `&random=true` parameter to get different color style every time.
 ![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&random=true)
 
 
+### Use cache
+
+You can pass a `&cache=true` parameter to set cache.
+
+```md
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&cache=true)
+```
+
+
 ## Deploy your own 🚀
 
 <details>
