@@ -22,13 +22,13 @@ Easy to use! 🅲🆃🆁🅻+🅲 & 🅲🆃🆁🅻+🆅 into your readme mark
 
 1. Find your Stack Overflow user id
 
-2. Change the `?user_id=` value to your Stack Overflow user id.
+2. Change the `?user=` value to your Stack Overflow user id.
 
 ```md
-[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user_id=10389571)](https://github.com/kurt-liao/so-stats)
+[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user=10389571)](https://github.com/kurt-liao/so-stats)
 ```
 
-[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user_id=10389571)](https://github.com/kurt-liao/so-stats)
+[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user=10389571)](https://github.com/kurt-liao/so-stats)
 
 or
 
@@ -36,13 +36,13 @@ or
 <a href="https://github.com/kurt-liao/so-stats">
   <img
     height="200"
-    src="https://so-stats-kurt-liao.vercel.app/api?user_id=10389571"
+    src="https://so-stats-kurt-liao.vercel.app/api?user=10389571"
   />
 </a>
 ```
 
 <a href="https://github.com/kurt-liao/so-stats"> 
-  <img height="200" src="https://so-stats-kurt-liao.vercel.app/api?user_id=10389571"/>
+  <img height="200" src="https://so-stats-kurt-liao.vercel.app/api?user=10389571"/>
 </a>
 
 Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
@@ -54,10 +54,10 @@ You can pass a  `&hide=` parameter with comma-seperated values.
 > `&hide=title,logo,badges,border`
 
 ```md
-![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&hide=title,logo,border)
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo,border)
 ```
 
-![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&hide=title,logo,border)
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo,border)
 
 
 ### Random theme
@@ -65,10 +65,10 @@ You can pass a  `&hide=` parameter with comma-seperated values.
 You can pass a `&random=true` parameter to get different color style every time.
 
 ```md
-![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&random=true)
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&random=true)
 ```
 
-![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&random=true)
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&random=true)
 
 
 ## Deploy your own 🚀
