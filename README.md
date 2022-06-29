@@ -1,40 +1,67 @@
-# Stack Overflow Stats
+</br>
 
-Idea from
-[GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+<div align="center">
+  <h1><img src="./assets/image/SoStats.png" alt="So Stats" height="50"/></h1>
+  <p>Generate your reputation info in Stack Overflow on your README profile</p>
+  
+  <img src="https://img.shields.io/github/deployments/kurt-liao/so-stats/production?label=vercel&logo=vercel" />
+  <img src="https://img.shields.io/badge/license-MIT-brightgreen" />
+  <img src="https://img.shields.io/badge/license-BEERWARE%20%F0%9F%8D%BA-yellowgreen" />
+  
+</div>
+
+<p align="center">
+  <a href="https://github.com/kurt-liao/so-stats/issues"> Issue </a>
+  .
+  <a href="https://github.com/kurt-liao/so-stats/pulls"> Feature </a>
+</p>
+
+# SO Stats Card
+
+Easy to use! 🅲🆃🆁🅻+🅲 & 🅲🆃🆁🅻+🆅 into your readme markdown.
+
+1. Find your Stack Overflow user id
+
+2. Change the `?user_id=` value to your Stack Overflow user id.
+
+```md
+[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user_id=10389571)](https://github.com/kurt-liao/so-stats)
+```
+
+[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user_id=10389571)](https://github.com/kurt-liao/so-stats)
+
+or
+
+```html
+<a href="https://github.com/kurt-liao/so-stats">
+  <img
+    height="200"
+    src="https://so-stats-kurt-liao.vercel.app/api?user_id=10389571"
+  />
+</a>
+```
+
+<a href="https://github.com/kurt-liao/so-stats"> 
+  <img height="200" src="https://so-stats-kurt-liao.vercel.app/api?user_id=10389571"/>
+</a>
+
+Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
+
+## Deploy your own 🚀
+
+<details>
+  <summary> <strong>Guide</strong> </summary>
+
+- Fork this repo
+- Sign up and log in into [Vercel](https://vercel.com/)
+- Go to Vercel [dashboard](https://vercel.com/dashboard)
+- Click `Import Project`
+- Click `Import Git Respository`
+- Click `delpoy`, and done. Find out your domain and start to use it!
+</details>
+
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkurt-liao%2Fso-stats"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
 ---
 
-## Demo
-
-<img height="200" src="https://so-stats-kurt-liao.vercel.app/api/demo" />
-
-## How to use
-
-- ### Find your Stack Overflow user id
-- Change your user id into url
-  `https://so-stats.vercel.app/api?user_id=[your-user-id]`
-
-## Optional Settings
-
-- Hide title - Put hide_title in url querys
-  ```
-  https://so-stats.vercel.app/api?user_id=[your-user-id]&hide_title=true` #default is false
-  ```
-
-- Hide Border -  Put hide_border in url querys
-  ```
-  https://so-stats.vercel.app/api?user_id=[your-user-id]&hide_border=true` #default is false
-  ```
-
-- Random theme - Put random in url querys
-  ```
-  https://so-stats.vercel.app/api?user_id=[your-user-id]&random=true`
-  #You will get different and not predictable theme everytime, default is false
-  ```
-
----
-
-### The project is in the very beginning.
-
-### Feel free to give me some feedback or suggestions!
+<h3>Contributions welcome! Also ⭐ </h3>
