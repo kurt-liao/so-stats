@@ -13,12 +13,14 @@ const renderStatsCard = (
     badgeTextColor = "#000",
     borderColor = "#fff",
 
-    hideBorder = false,
-    hideBadges = false,
-    hideTitle = false,
-    hideLogo = false,
+    hide = [],
   },
 ) => {
+  const hideBorder = hide.includes("border");
+  const hideBadges = hide.includes("badges");
+  const hideTitle = hide.includes("title");
+  const hideLogo = hide.includes("logo");
+
   const options = {
     bgColor,
     iconColor,
@@ -119,7 +121,7 @@ const renderStatsCard = (
   card.setStyle(css);
 
   return card.render(
-    `<g transform="translate(25, 70)">
+    `<g transform="translate(25, ${hideTitle ? 30 : 70})">
       ${renderStats(reputation, questionCount, answerCount)}
       ${hideBadges ? null : renderBadges(badges)}
      </g>

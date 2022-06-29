@@ -3,7 +3,7 @@ const getIcon = require("../common/icons");
 
 class Card {
   constructor(
-    { width = 100, height = 100, title = "" },
+    { width = 450, height = 170, title = "" },
     {
       bgColor,
       iconColor,
@@ -14,6 +14,7 @@ class Card {
       hideBorder,
       hideTitle,
       hideLogo,
+      hideBadges,
     },
   ) {
     this.width = width;
@@ -30,6 +31,7 @@ class Card {
     this.hideBorder = hideBorder;
     this.hideTitle = hideTitle;
     this.hideLogo = hideLogo;
+    this.hideBadges = hideBadges;
   }
 
   setStyle(css) {
@@ -41,28 +43,35 @@ class Card {
   }
 
   calcLongTitleWidth() {
-    if (!this.title) return 450;
     return 65 + this.title.length * 10;
+  }
+
+  getHeight() {
+    return this.hideTitle ? 120 : 170;
+  }
+
+  getWidth() {
+    return !this.hideTitle && this.isLongTitle()
+      ? this.calcLongTitleWidth()
+      : this.hideTitle && this.hideBadges
+      ? 300
+      : 450;
   }
 
   render(body) {
     return `
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="${
-        this.isLongTitle() ? this.calcLongTitleWidth() : 450
-      }" height="172" viewBox="${
-      this.isLongTitle()
-        ? `0 0 ${this.calcLongTitleWidth()} 170`
-        : "0 0 450 170"
-    }">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="${this.getWidth()}" height="${this.getHeight()}" viewBox="${`0 0 ${this.getWidth()} ${this.getHeight()}`}">
         <style>
           ${this.css}
           ${getAnimations()}
         </style>
         <rect xmlns="http://www.w3.org/2000/svg" data-testid="card-bg" fill="${
           this.bgColor
-        }" x="0.5" height="99%" rx="10" stroke="${this.borderColor}" width="${
-      this.isLongTitle() ? this.calcLongTitleWidth() - 1 : 450
-    }" stroke-width="3" stroke-opacity="${this.hideBorder ? 0 : 1}" />
+        }" x="0.5" height="99%" rx="10" stroke="${
+      this.borderColor
+    }" width="${this.getWidth()}" stroke-width="3" stroke-opacity="${
+      this.hideBorder ? 0 : 1
+    }" />
         <!-- Title -->
         ${
           !this.hideTitle
