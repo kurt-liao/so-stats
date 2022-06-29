@@ -47,6 +47,30 @@ or
 
 Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
 
+### Hide specific info
+
+You can pass a  `&hide=` parameter with comma-seperated values.
+
+> `&hide=title,logo,badges,border`
+
+```md
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&hide=title,logo,border)
+```
+
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&hide=title,logo,border)
+
+
+### Random theme
+
+You can pass a `&random=true` parameter to get different color style every time.
+
+```md
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&random=true)
+```
+
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user_id=10389571&random=true)
+
+
 ## Deploy your own 🚀
 
 <details>
