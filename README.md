@@ -49,7 +49,7 @@ Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
 
 ### Hide specific info
 
-You can pass a  `&hide=` parameter with comma-seperated values.
+You can pass a `&hide=` parameter with comma-seperated values.
 
 > `&hide=title,logo,badges,border`
 
@@ -58,7 +58,6 @@ You can pass a  `&hide=` parameter with comma-seperated values.
 ```
 
 ![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo,border)
-
 
 ### Random theme
 
@@ -70,7 +69,6 @@ You can pass a `&random=true` parameter to get different color style every time.
 
 ![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&random=true)
 
-
 ### Use cache
 
 You can pass a `&cache=true` parameter to set cache.
@@ -78,7 +76,6 @@ You can pass a `&cache=true` parameter to set cache.
 ```md
 ![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&cache=true)
 ```
-
 
 ## Deploy your own 🚀
 
@@ -88,9 +85,15 @@ You can pass a `&cache=true` parameter to set cache.
 - Fork this repo
 - Sign up and log in into [Vercel](https://vercel.com/)
 - Go to Vercel [dashboard](https://vercel.com/dashboard)
-- Click `Import Project`
-- Click `Import Git Respository`
+- Click `New Project`
+- Click `Import Git Respository`(Of course you need to authorize the repo first, then you can see the repo in the list)
+![2022-06-30_10-28](https://user-images.githubusercontent.com/32745146/176579816-2a28f1d5-2fd2-4218-8367-01a53dfcc09a.png)
+
 - Click `delpoy`, and done. Find out your domain and start to use it!
+- Add following command to prevent deploying on irrelevant changes.
+![2022-06-30_10-17](https://user-images.githubusercontent.com/32745146/176579415-23ac711e-c695-4bad-aa85-1faf4ef67c67.png)
+
+
 </details>
 
 <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkurt-liao%2Fso-stats"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
