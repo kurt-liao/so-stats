@@ -96,15 +96,15 @@ const renderStatsCard = (
       <svg x="0" y="0">
         <g transform="translate(0, 0)">
           <text x="0" y="10" class="stat">Reputation : </text>
-          <text x="130" y="10" class="stat-value">${reputation || 0}</text>
-        </g>
-        <g transform="translate(0, 60)">
-          <text x="0" y="10" class="stat">Answer Count : </text>
-          <text x="130" y="10" class="stat-value">${answerCount || 0}</text>
+          <text x="100" y="10" class="stat-value">${reputation || 0}</text>
         </g>
         <g transform="translate(0, 30)">
-          <text x="-0" y="10" class="stat">Question Count : </text>
-          <text x="130" y="10" class="stat-value">${questionCount || 0}</text>
+          <text x="-0" y="10" class="stat">Questions : </text>
+          <text x="100" y="10" class="stat-value">${questionCount || 0}</text>
+        </g>
+        <g transform="translate(0, 60)">
+          <text x="0" y="10" class="stat">Answers : </text>
+          <text x="100" y="10" class="stat-value">${answerCount || 0}</text>
         </g>
       </svg>`;
   };

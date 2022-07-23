@@ -3,7 +3,7 @@ const getIcon = require("../common/icons");
 
 class Card {
   constructor(
-    { width = 450, height = 170, title = "" },
+    { width = 385, height = 170, title = "" },
     {
       bgColor,
       iconColor,
@@ -55,7 +55,7 @@ class Card {
       ? this.calcLongTitleWidth()
       : this.hideTitle && this.hideBadges
       ? 300
-      : 450;
+      : 385;
   }
 
   render(body) {
