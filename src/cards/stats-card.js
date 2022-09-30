@@ -1,20 +1,11 @@
 const Card = require("../common/Card");
 const { getRandomTheme, numFormatter } = require("../common/utils");
 const { getStyle } = require("../common/styles");
+const { useTheme } = require("../common/theme");
 
 const renderStatsCard = (
   stats = {},
-  {
-    random = false,
-    bgColor = "#000",
-    iconColor = "#fff",
-    titleColor = "#e7f216",
-    textColor = "#fff",
-    badgeTextColor = "#000",
-    borderColor = "#fff",
-
-    hide = [],
-  },
+  { random = false, theme = "", hide = [] },
 ) => {
   const hideBorder = hide.includes("border");
   const hideBadges = hide.includes("badges");
@@ -22,31 +13,26 @@ const renderStatsCard = (
   const hideLogo = hide.includes("logo");
 
   const options = {
-    bgColor,
-    iconColor,
-    titleColor,
-    textColor,
-    badgeTextColor,
-    borderColor,
-
     hideBorder,
     hideBadges,
     hideTitle,
     hideLogo,
   };
 
+  const { bgColor, titleColor, textColor, borderColor, badgeTextColor } =
+    useTheme(theme);
+
+  options.bgColor = bgColor;
+  options.titleColor = titleColor;
+  options.textColor = textColor;
+  options.borderColor = borderColor;
+  options.badgeTextColor = badgeTextColor;
+
   if (random) {
-    const {
-      bgColor,
-      iconColor,
-      titleColor,
-      textColor,
-      borderColor,
-      badgeTextColor,
-    } = getRandomTheme();
+    const { bgColor, titleColor, textColor, borderColor, badgeTextColor } =
+      getRandomTheme();
 
     options.bgColor = bgColor;
-    options.iconColor = iconColor;
     options.titleColor = titleColor;
     options.textColor = textColor;
     options.borderColor = borderColor;

@@ -4,13 +4,14 @@ const fetchStats = require("../src/requests/stats-request");
 require("dotenv").config();
 
 module.exports = async (req, res) => {
-  const { user, random, hide = "", cache } = req.query;
+  const { user, theme, random, hide = "", cache } = req.query;
 
   const _hide = hide.replace(/\s/g, "");
   const hideArr = _hide.split(",");
 
   const options = {
     random,
+    theme,
     hide: hideArr,
   };
 

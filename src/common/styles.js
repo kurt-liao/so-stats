@@ -11,7 +11,7 @@ const getAnimations = () => {
     `;
 };
 
-const getStyle = ({ titleColor, textColor, iconColor, badgeTextColor }) => {
+const getStyle = ({ titleColor, textColor, badgeTextColor }) => {
   return `
     .title {
       font-size: 18px;

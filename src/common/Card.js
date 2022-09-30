@@ -6,7 +6,6 @@ class Card {
     { width = 385, height = 170, title = "" },
     {
       bgColor,
-      iconColor,
       titleColor,
       textColor,
       badgeTextColor,
@@ -23,7 +22,6 @@ class Card {
     this.css = "";
 
     this.bgColor = bgColor;
-    this.iconColor = iconColor;
     this.titleColor = titleColor;
     this.textColor = textColor;
     this.badgeTextColor = badgeTextColor;

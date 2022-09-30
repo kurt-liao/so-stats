@@ -11,7 +11,6 @@ const isArrayHasValue = (v) => {
 const getRandomTheme = () => {
   const randomColor = () => tinycolor.random();
   const bgColor = randomColor();
-  const iconColor = randomColor();
   const titleColor = randomColor();
   const textColor = randomColor();
   const borderColor = randomColor();
@@ -27,12 +26,10 @@ const getRandomTheme = () => {
   if (bgColor.isDark()) {
     titleColor.getBrightness();
     textColor.getBrightness();
-    iconColor.getBrightness();
   }
 
   return {
     bgColor,
-    iconColor,
     titleColor,
     textColor,
     borderColor,
