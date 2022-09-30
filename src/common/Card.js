@@ -9,7 +9,6 @@ class Card {
       titleColor,
       textColor,
       badgeTextColor,
-      borderColor,
       hideBorder,
       hideTitle,
       hideLogo,
@@ -25,7 +24,6 @@ class Card {
     this.titleColor = titleColor;
     this.textColor = textColor;
     this.badgeTextColor = badgeTextColor;
-    this.borderColor = borderColor;
     this.hideBorder = hideBorder;
     this.hideTitle = hideTitle;
     this.hideLogo = hideLogo;
@@ -65,9 +63,7 @@ class Card {
         </style>
         <rect xmlns="http://www.w3.org/2000/svg" data-testid="card-bg" fill="${
           this.bgColor
-        }" x="0.5" height="99%" rx="10" stroke="${
-      this.borderColor
-    }" width="${this.getWidth()}" stroke-width="3" stroke-opacity="${
+        }" x="0.5" height="99%" rx="10" width="${this.getWidth()}" stroke-width="3" stroke-opacity="${
       this.hideBorder ? 0 : 1
     }" />
         <!-- Title -->

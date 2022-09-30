@@ -13,7 +13,6 @@ const getRandomTheme = () => {
   const bgColor = randomColor();
   const titleColor = randomColor();
   const textColor = randomColor();
-  const borderColor = randomColor();
   const badgeTextColor = randomColor();
 
   while (
@@ -32,7 +31,6 @@ const getRandomTheme = () => {
     bgColor,
     titleColor,
     textColor,
-    borderColor,
     badgeTextColor,
   };
 };

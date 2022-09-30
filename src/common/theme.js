@@ -3,7 +3,6 @@ const defaultTheme = {
   titleColor: "#E7F216",
   textColor: "#FFF",
   badgeTextColor: "#000",
-  borderColor: "#FFF",
 };
 
 const greeneryTheme = {
@@ -11,7 +10,6 @@ const greeneryTheme = {
   titleColor: "#2B5C33",
   textColor: "#FB418C",
   badgeTextColor: "#F7300B",
-  borderColor: "#FFF",
 };
 
 const forestTheme = {
@@ -19,7 +17,6 @@ const forestTheme = {
   titleColor: "#E7A1DE",
   textColor: "#87E3C9",
   badgeTextColor: "#87E3C9",
-  borderColor: "#FFF",
 };
 
 const humanSkinTheme = {
@@ -27,7 +24,6 @@ const humanSkinTheme = {
   titleColor: "#CEC411",
   textColor: "#37B9EF",
   badgeTextColor: "#8D72D6",
-  borderColor: "#FFF",
 };
 
 const useTheme = (theme) => {
