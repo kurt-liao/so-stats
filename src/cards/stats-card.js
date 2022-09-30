@@ -19,23 +19,19 @@ const renderStatsCard = (
     hideLogo,
   };
 
-  const { bgColor, titleColor, textColor, borderColor, badgeTextColor } =
-    useTheme(theme);
+  const { bgColor, titleColor, textColor, badgeTextColor } = useTheme(theme);
 
   options.bgColor = bgColor;
   options.titleColor = titleColor;
   options.textColor = textColor;
-  options.borderColor = borderColor;
   options.badgeTextColor = badgeTextColor;
 
   if (random) {
-    const { bgColor, titleColor, textColor, borderColor, badgeTextColor } =
-      getRandomTheme();
+    const { bgColor, titleColor, textColor, badgeTextColor } = getRandomTheme();
 
     options.bgColor = bgColor;
     options.titleColor = titleColor;
     options.textColor = textColor;
-    options.borderColor = borderColor;
     options.badgeTextColor = badgeTextColor;
   }
 
