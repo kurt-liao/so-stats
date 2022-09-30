@@ -54,13 +54,13 @@ Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
 
 You can pass a `&hide=` parameter with comma-seperated values.
 
-> `&hide=title,logo,badges,border`
+> `&hide=title,logo,badges`
 
 ```md
-![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo,border)
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo)
 ```
 
-![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo,border)
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo)
 
 ### Random theme
 
