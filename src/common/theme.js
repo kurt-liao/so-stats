@@ -19,7 +19,7 @@ const forestTheme = {
   badgeTextColor: "#87E3C9",
 };
 
-const humanSkinTheme = {
+const maltTheme = {
   bgColor: "#E8D4C2",
   titleColor: "#CEC411",
   textColor: "#37B9EF",
@@ -28,8 +28,8 @@ const humanSkinTheme = {
 
 const useTheme = (theme) => {
   switch (theme) {
-    case "human-skin":
-      return humanSkinTheme;
+    case "malt":
+      return maltTheme;
     case "greenery":
       return greeneryTheme;
     case "forest":
