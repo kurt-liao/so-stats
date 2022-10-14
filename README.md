@@ -70,7 +70,7 @@ Finally, we have some inbuilt themes. Use `&theme=THEME_NAME` like:
 ![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&theme=greenery)
 ```
 
-> Themes name we have: `greenery`, `forest`, `malt` (Default theme don't need to assign).
+> Themes name we have: `greenery`, `forest`, `malt`, `azure` (Default theme don't need to assign).
 
 #### All inbuilt themes
 
