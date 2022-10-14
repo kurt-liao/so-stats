@@ -74,9 +74,9 @@ Finally, we have some inbuilt themes. Use `&theme=THEME_NAME` like:
 
 #### All inbuilt themes
 
-| <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571" alt="Default theme" /></a> | <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=greenery" alt="Greenery theme" /></a> |
-| ------------- | ------------- |
-| <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=forest" alt="Forest theme" /></a> | <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=malt" alt="Malt theme" /></a> |
+| <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571" alt="Default theme" /></a> | <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=greenery" alt="Greenery theme" /></a> | <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=forest" alt="Forest theme" /></a>
+| ------------- | ------------- | ------------- |
+| <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=malt" alt="Malt theme" /></a> | <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=azure" alt="Azure theme" /></a> |
 
 
 
