@@ -62,6 +62,24 @@ You can pass a `&hide=` parameter with comma-seperated values.
 
 ![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&hide=title,logo)
 
+### Themes
+
+Finally, we have some inbuilt themes. Use `&theme=THEME_NAME` like:
+
+```md
+![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&theme=greenery)
+```
+
+> Themes name we have: `greenery`, `forest`, `malt` (Default theme don't need to assign).
+
+#### All inbuilt themes
+
+| <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571" alt="Default theme" /></a> | <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=greenery" alt="Greenery theme" /></a> |
+| ------------- | ------------- |
+| <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=forest" alt="Forest theme" /></a> | <a href="https://github.com/kurt-liao/so-stats"><img align="center" src="https://so-stats.vercel.app/api?user=10389571&theme=malt" alt="Malt theme" /></a> |
+
+
+
 ### Random theme
 
 You can pass a `&random=true` parameter to get different color style every time.
