@@ -2,10 +2,12 @@ const Card = require("../common/Card");
 const { getRandomTheme, numFormatter } = require("../common/utils");
 const { getStyle } = require("../common/styles");
 const { useTheme } = require("../common/theme");
+const { default: I18n } = require("../common/i18n");
+const { statCardLocales } = require("../translation");
 
 const renderStatsCard = (
   stats = {},
-  { random = false, theme = "", hide = [] },
+  { random = false, theme = "", hide = [], locale },
 ) => {
   const hideBorder = hide.includes("border");
   const hideBadges = hide.includes("badges");
@@ -26,6 +28,7 @@ const renderStatsCard = (
   options.textColor = textColor;
   options.badgeTextColor = badgeTextColor;
 
+  // If set random, overwrite the theme colors.
   if (random) {
     const { bgColor, titleColor, textColor, badgeTextColor } = getRandomTheme();
 
@@ -36,6 +39,11 @@ const renderStatsCard = (
   }
 
   const { name, badges = {}, reputation, questionCount, answerCount } = stats;
+
+  const i18n = new I18n({
+    locale,
+    translations: statCardLocales({ name }),
+  });
 
   const renderBadges = (badges) => {
     badges.gold = numFormatter(badges?.gold, 1);
@@ -77,15 +85,15 @@ const renderStatsCard = (
     return `
       <svg x="0" y="0">
         <g transform="translate(0, 0)">
-          <text x="0" y="10" class="stat">Reputation : </text>
+          <text x="0" y="10" class="stat">${i18n.t("statcard.reputation")} : </text>
           <text x="100" y="10" class="stat-value">${reputation || 0}</text>
         </g>
         <g transform="translate(0, 30)">
-          <text x="-0" y="10" class="stat">Questions : </text>
+          <text x="-0" y="10" class="stat">${i18n.t("statcard.question")} : </text>
           <text x="100" y="10" class="stat-value">${questionCount || 0}</text>
         </g>
         <g transform="translate(0, 60)">
-          <text x="0" y="10" class="stat">Answers : </text>
+          <text x="0" y="10" class="stat">${i18n.t("statcard.answer")} : </text>
           <text x="100" y="10" class="stat-value">${answerCount || 0}</text>
         </g>
       </svg>`;
@@ -95,7 +103,7 @@ const renderStatsCard = (
 
   const card = new Card(
     {
-      title: name + "'s Stack Overflow Stats",
+      title: i18n.t("statcard.title"),
     },
     options,
   );
