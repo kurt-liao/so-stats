@@ -6,8 +6,8 @@
   
   <img src="https://hits.dwyl.com/kurt-liao/so-stats.svg?style=flat" />
   <img src="https://img.shields.io/github/deployments/kurt-liao/so-stats/production?label=vercel&logo=vercel" />
-  <img src="https://img.shields.io/badge/license-MIT-blue" />
-  <img src="https://img.shields.io/badge/license-BEERWARE%20%F0%9F%8D%BA-yellowgreen" />
+  <a href="https://github.com/kurt-liao/so-stats/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
+  <a href="https://www.buymeacoffee.com/vermouth02D"><img src="https://img.shields.io/badge/license-BEERWARE%20%F0%9F%8D%BA-yellowgreen" /></a>
   
 </div>
 
@@ -21,7 +21,17 @@
   <a href="https://medium.com/kurt/show-your-stack-overflow-stats-on-github-profile-7624bc434db4"> Medium </a>
 </p>
 
-# SO Stats Card
+# Table of contents
+1. [Usage](#usage)
+2. [Optional](#optional)
+    1. [Hide info](#hide-info)
+    2. [Themes](#themes)
+    3. [Random theme](#random-theme)
+    4. [Locale](#locale)
+    5. [Cache](#use-cache)
+3. [Deploy](#deploy-your-own-)
+
+## Usage
 
 Easy to use! 🅲🆃🆁🅻+🅲 & 🅲🆃🆁🅻+🆅 into your readme markdown.
 
@@ -52,7 +62,9 @@ or
 
 Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
 
-### Hide specific info
+## Optional
+
+### Hide info
 
 You can pass a `&hide=` parameter with comma-seperated values.
 
