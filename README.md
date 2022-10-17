@@ -40,10 +40,10 @@ Easy to use! 🅲🆃🆁🅻+🅲 & 🅲🆃🆁🅻+🆅 into your readme mark
 2. Change the `?user=` value to your Stack Overflow user id.
 
 ```md
-[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user=10389571)](https://github.com/kurt-liao/so-stats)
+[![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571)](https://github.com/kurt-liao/so-stats)
 ```
 
-[![My Stack Overflow Stats](https://so-stats-kurt-liao.vercel.app/api?user=10389571)](https://github.com/kurt-liao/so-stats)
+[![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571)](https://github.com/kurt-liao/so-stats)
 
 or
 
@@ -51,13 +51,13 @@ or
 <a href="https://github.com/kurt-liao/so-stats">
   <img
     height="200"
-    src="https://so-stats-kurt-liao.vercel.app/api?user=10389571"
+    src="https://so-stats.vercel.app/api?user=10389571"
   />
 </a>
 ```
 
 <a href="https://github.com/kurt-liao/so-stats"> 
-  <img height="200" src="https://so-stats-kurt-liao.vercel.app/api?user=10389571"/>
+  <img height="200" src="https://so-stats.vercel.app/api?user=10389571"/>
 </a>
 
 Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
