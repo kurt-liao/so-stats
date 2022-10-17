@@ -1,7 +1,6 @@
 const renderStatsCard = require("../src/cards/stats-card");
 const { renderError } = require("../src/common/utils");
 const fetchStats = require("../src/requests/stats-request");
-require("dotenv").config();
 
 module.exports = async (req, res) => {
   const { user, theme, random, hide = "", cache, locale } = req.query;
