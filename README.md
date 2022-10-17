@@ -90,6 +90,12 @@ You can pass a `&random=true` parameter to get different color style every time.
 
 ![My Stack Overflow Stats](https://so-stats.vercel.app/api?user=10389571&random=true)
 
+### Locale
+
+Support multi-language, use `&locale=` to set the locale you want.
+
+At this moment, we support `en`, `cn`, `kr`, `zh-tw`. Default language is `en`.
+
 ### Use cache
 
 You can pass a `&cache=true` parameter to set cache.
