@@ -33,6 +33,13 @@ const maltTheme = {
   badgeTextColor: "#8D72D6",
 };
 
+const witchTheme = {
+  bgColor: "#426394",
+  titleColor: "#8F037A",
+  textColor: "#D075A8",
+  badgeTextColor: "#ED1C29",
+};
+
 const useTheme = (theme) => {
   switch (theme) {
     case "malt":
@@ -43,6 +50,8 @@ const useTheme = (theme) => {
       return forestTheme;
     case "azure":
       return azureTheme;
+    case "witch":
+      return witchTheme;
     default:
       return defaultTheme;
   }
