@@ -16,7 +16,9 @@
   .
   <a href="https://github.com/kurt-liao/so-stats/pulls"> Feature </a>
   .
-  <a href="https://medium.com/kurt/show-your-stack-overflow-stats-on-github-profile-7624bc434db4"> Intro on Medium </a>
+  <a href="https://blog.kurtstories.com/post/show-stackoverflow-stats-on-github/"> Blog </a>
+  .
+  <a href="https://medium.com/kurt/show-your-stack-overflow-stats-on-github-profile-7624bc434db4"> Medium </a>
 </p>
 
 # SO Stats Card
