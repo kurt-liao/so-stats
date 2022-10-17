@@ -92,9 +92,9 @@ Finally, we have some inbuilt themes. Use `&theme=THEME_NAME` like:
 |  ----  | ----  | ---- |
 | ![Default](https://so-stats.vercel.app/api?user=10389571) | ![Greenery](https://so-stats.vercel.app/api?user=10389571&theme=greenery) | ![Forest](https://so-stats.vercel.app/api?user=10389571&theme=forest) |
 
-|  malt   | azure  |
-|  ----  | ----  |
-| ![Malt](https://so-stats.vercel.app/api?user=10389571&theme=malt)  | ![Azure](https://so-stats.vercel.app/api?user=10389571&theme=azure) |
+|  malt   | azure  | witch |
+|  ----  | ----  | ---- |
+| ![Malt](https://so-stats.vercel.app/api?user=10389571&theme=malt)  | ![Azure](https://so-stats.vercel.app/api?user=10389571&theme=azure) | ![Witch](https://so-stats.vercel.app/api?user=10389571&theme=witch)
 
 
 
