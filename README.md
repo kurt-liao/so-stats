@@ -1,4 +1,7 @@
 </br>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <div align="center">
   <h1><img src="./assets/image/SoStats.png" alt="So Stats" height="50"/></h1>
@@ -149,6 +152,21 @@ You can pass a `&cache=true` parameter to set cache.
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://blog.kurtstories.com/"><img src="https://avatars.githubusercontent.com/u/32745146?v=4?s=100" width="100px;" alt="Kurt"/><br /><sub><b>Kurt</b></sub></a><br /><a href="https://github.com/kurt-liao/so-stats/commits?author=kurt-liao" title="Code">💻</a> <a href="https://github.com/kurt-liao/so-stats/commits?author=kurt-liao" title="Documentation">📖</a> <a href="#design-kurt-liao" title="Design">🎨</a> <a href="https://github.com/kurt-liao/so-stats/pulls?q=is%3Apr+reviewed-by%3Akurt-liao" title="Reviewed Pull Requests">👀</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
