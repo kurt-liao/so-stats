@@ -30,6 +30,7 @@
     4. [Locale](#locale)
     5. [Cache](#use-cache)
 3. [Deploy](#deploy-your-own-)
+4. [Contributors](#contributors)
 
 ## Usage
 
@@ -112,7 +113,7 @@ You can pass a `&random=true` parameter to get different color style every time.
 
 Support multi-language, use `&locale=` to set the locale you want.
 
-At this moment, we support `en`, `cn`, `kr`, `zh-tw`. Default language is `en`.
+At this moment, we support `en`, `cn`, `kr`, `zh-tw`, `nl` . Default language is `en`.
 
 ### Use cache
 
