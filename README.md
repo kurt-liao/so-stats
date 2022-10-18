@@ -156,6 +156,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   <tbody>
     <tr>
       <td align="center"><a href="https://blog.kurtstories.com/"><img src="https://avatars.githubusercontent.com/u/32745146?v=4?s=100" width="100px;" alt="Kurt"/><br /><sub><b>Kurt</b></sub></a><br /><a href="https://github.com/kurt-liao/so-stats/commits?author=kurt-liao" title="Code">💻</a> <a href="https://github.com/kurt-liao/so-stats/commits?author=kurt-liao" title="Documentation">📖</a> <a href="#design-kurt-liao" title="Design">🎨</a> <a href="https://github.com/kurt-liao/so-stats/pulls?q=is%3Apr+reviewed-by%3Akurt-liao" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center"><a href="http://lekkerplakjekaas.nl"><img src="https://avatars.githubusercontent.com/u/38831226?v=4?s=100" width="100px;" alt="Sem"/><br /><sub><b>Sem</b></sub></a><br /><a href="https://github.com/kurt-liao/so-stats/commits?author=Semvrij" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
