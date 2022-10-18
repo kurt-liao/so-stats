@@ -34,7 +34,7 @@
 
 ## Usage
 
-Easy to use! 🅲🆃🆁🅻+🅲 & 🅲🆃🆁🅻+🆅 into your readme markdown.
+Easy to use! <kbd>Ctrl + C</kbd> + <kbd>Ctrl + V</kbd> to paste into your readme profile editor.
 
 1. Find your Stack Overflow user id
 
