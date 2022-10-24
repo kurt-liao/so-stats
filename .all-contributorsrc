@@ -44,6 +44,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "sarequl",
+      "name": "Sarequl Basar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9193780?v=4",
+      "profile": "http://sarequl.me",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
