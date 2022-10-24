@@ -1,7 +1,7 @@
 export const statCardLocales = ({ name }) => {
   return {
     "statcard.title": {
-      bd: `${name} এর Stack Overflow পরিসংখ্যান`,
+      bn: `${name} এর Stack Overflow পরিসংখ্যান`,
       cn: `${name} 的 Stack Overflow 数据`,
       en: `${name}'s Stack Overflow Stats`,
       es: `${name}'s estadísticas de Stack Overflow `,
