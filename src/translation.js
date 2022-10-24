@@ -3,6 +3,7 @@ export const statCardLocales = ({ name }) => {
     "statcard.title": {
       bn: `${name} এর Stack Overflow পরিসংখ্যান`,
       cn: `${name} 的 Stack Overflow 数据`,
+      de: `${name} von Stack Overflow Statistiken`,
       en: `${name}'s Stack Overflow Stats`,
       es: `${name}'s estadísticas de Stack Overflow `,
       kr: `${name} 의 Stack Overflow 통계`,
@@ -12,6 +13,7 @@ export const statCardLocales = ({ name }) => {
     "statcard.reputation": {
       bn: `খ্যাতি`,
       cn: `声量`,
+      de: `Ruf`,
       en: `Reputation`,
       es: `Reputación`,
       kr: `평판`,
@@ -21,6 +23,7 @@ export const statCardLocales = ({ name }) => {
     "statcard.question": {
       bn: `প্রশ্ন`,
       cn: `问题`,
+      de: `Fragen`,
       en: `Questions`,
       es: `Preguntas`,
       kr: `의문`,
@@ -30,6 +33,7 @@ export const statCardLocales = ({ name }) => {
     "statcard.answer": {
       bn: `উত্তর`,
       cn: `回答`,
+      de: `Answers`,
       en: `Answers`,
       es: `Respuestas`,
       kr: `대답`,
