@@ -10,5 +10,8 @@
       "source": "/",
       "destination": "https://github.com/kurt-liao/so-stats"
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
