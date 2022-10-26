@@ -8,6 +8,7 @@ export const statCardLocales = ({ name }) => {
       es: `${name}'s estadísticas de Stack Overflow `,
       kr: `${name} 의 Stack Overflow 통계`,
       nl: `${name}'s Stack Overflow-statistieken`,
+      tr: `${name}'nin Yığın Taşması İstatistikleri`,
       "zh-tw": `${name} 的 Stack Overflow 數據`,
     },
     "statcard.reputation": {
@@ -18,6 +19,7 @@ export const statCardLocales = ({ name }) => {
       es: `Reputación`,
       kr: `평판`,
       nl: `Reputatie`,
+      tr: `İtibar`,
       "zh-tw": `聲量`,
     },
     "statcard.question": {
@@ -28,6 +30,7 @@ export const statCardLocales = ({ name }) => {
       es: `Preguntas`,
       kr: `의문`,
       nl: `Vragen`,
+      tr: `Sorular`,
       "zh-tw": `問題`,
     },
     "statcard.answer": {
@@ -38,6 +41,7 @@ export const statCardLocales = ({ name }) => {
       es: `Respuestas`,
       kr: `대답`,
       nl: `Antwoorden`,
+      tr: `Yanıtlar`,
       "zh-tw": `回答`,
     },
   };
