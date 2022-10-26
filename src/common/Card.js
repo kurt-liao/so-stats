@@ -1,9 +1,9 @@
-const { getAnimations } = require("../common/styles");
-const getIcon = require("../common/icons");
+const { getAnimations } = require('../common/styles')
+const getIcon = require('../common/icons')
 
 class Card {
   constructor(
-    { width = 385, height = 170, title = "" },
+    { width = 385, height = 170, title = '' },
     {
       bgColor,
       titleColor,
@@ -15,43 +15,43 @@ class Card {
       hideBadges,
     },
   ) {
-    this.width = width;
-    this.height = height;
-    this.title = title;
-    this.css = "";
+    this.width = width
+    this.height = height
+    this.title = title
+    this.css = ''
 
-    this.bgColor = bgColor;
-    this.titleColor = titleColor;
-    this.textColor = textColor;
-    this.badgeTextColor = badgeTextColor;
-    this.hideBorder = hideBorder;
-    this.hideTitle = hideTitle;
-    this.hideLogo = hideLogo;
-    this.hideBadges = hideBadges;
+    this.bgColor = bgColor
+    this.titleColor = titleColor
+    this.textColor = textColor
+    this.badgeTextColor = badgeTextColor
+    this.hideBorder = hideBorder
+    this.hideTitle = hideTitle
+    this.hideLogo = hideLogo
+    this.hideBadges = hideBadges
   }
 
   setStyle(css) {
-    this.css = css;
+    this.css = css
   }
 
   isLongTitle() {
-    return this.title && this.title.length > 36;
+    return this.title && this.title.length > 36
   }
 
   calcLongTitleWidth() {
-    return 65 + this.title.length * 10;
+    return 65 + this.title.length * 10
   }
 
   getHeight() {
-    return this.hideTitle ? 120 : 170;
+    return this.hideTitle ? 120 : 170
   }
 
   getWidth() {
     return !this.hideTitle && this.isLongTitle()
       ? this.calcLongTitleWidth()
       : this.hideTitle && this.hideBadges
-      ? 300
-      : 385;
+        ? 300
+        : 385
   }
 
   render(body) {
@@ -72,18 +72,18 @@ class Card {
             ? `<g transform="translate(25, 42)">
                 ${
                   !this.hideLogo
-                    ? `<svg x="-6" y="-26"> ${getIcon("so")}</svg>`
-                    : ""
+                    ? `<svg x="-6" y="-26"> ${getIcon('so')}</svg>`
+                    : ''
                 }
-                <text class="title" x="${this.hideLogo ? "" : 40}" y="0">${
+                <text class="title" x="${this.hideLogo ? '' : 40}" y="0">${
                 this.title
               }</text>
               </g>`
-            : ""
+            : ''
         }
         ${body}
-      </svg>`;
+      </svg>`
   }
 }
 
-module.exports = Card;
+module.exports = Card

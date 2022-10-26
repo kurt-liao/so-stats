@@ -8,8 +8,8 @@ const getAnimations = () => {
               opacity: 1;
           }
       }
-    `;
-};
+    `
+}
 
 const getStyle = ({ titleColor, textColor, badgeTextColor }) => {
   return `
@@ -40,7 +40,7 @@ const getStyle = ({ titleColor, textColor, badgeTextColor }) => {
     .badge-text {
       fill: ${badgeTextColor}
     }
-  `;
-};
+  `
+}
 
-module.exports = { getStyle, getAnimations };
+module.exports = { getStyle, getAnimations }

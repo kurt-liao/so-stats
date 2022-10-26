@@ -2,19 +2,22 @@
   "name": "so-stats",
   "version": "1.0.0",
   "description": "Generate Stack Overflow stats for your github readme",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "husky install"
-  },
   "author": "Kurt",
   "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "husky install",
+    "lint": "eslint .",
+    "lint.fix": "eslint . --fix"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "eslint": "^8.26.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1"
   }
