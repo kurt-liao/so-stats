@@ -12,6 +12,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center"><a href="https://github.com/natastro"><img src="https://avatars.githubusercontent.com/u/17433156?v=4?s=100" width="100px;" alt="Natalie Stroud"/><br /><sub><b>Natalie Stroud</b></sub></a><br /><a href="#translation-natastro" title="Translation">🌍</a></td>
       <td align="center"><a href="https://github.com/BinTofajjal"><img src="https://avatars.githubusercontent.com/u/66693938?v=4?s=100" width="100px;" alt="Habib Bin Tofajjal"/><br /><sub><b>Habib Bin Tofajjal</b></sub></a><br /><a href="#translation-BinTofajjal" title="Translation">🌍</a></td>
       <td align="center"><a href="http://sarequl.me"><img src="https://avatars.githubusercontent.com/u/9193780?v=4?s=100" width="100px;" alt="Sarequl Basar"/><br /><sub><b>Sarequl Basar</b></sub></a><br /><a href="#translation-sarequl" title="Translation">🌍</a></td>
+      <td align="center"><a href="https://nexyta.com"><img src="https://avatars.githubusercontent.com/u/13257516?v=4?s=100" width="100px;" alt="Faisal Ahammad"/><br /><sub><b>Faisal Ahammad</b></sub></a><br /><a href="#translation-faisalahammad" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
